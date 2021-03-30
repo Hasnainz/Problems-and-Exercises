@@ -35,5 +35,5 @@ for i in range(0, n):
  
     
 file1.close()
-
+read.close()
 

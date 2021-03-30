@@ -18,3 +18,6 @@ def solve(index, final):
 count = int(read.readline())
 for i in range(0, count):
     solve(i+1, i == count-1)
+
+read.close()
+write.close()
