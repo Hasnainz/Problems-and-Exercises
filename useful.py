@@ -5,6 +5,12 @@ def reg_round(n, dp):
         return math.floor(n)/10 ** dp
     return math.ceil(n)/10 ** dp
 
+def distance_3D(x1,x2,y1,y2,z1,z2): 
+    return (((x2-x1)**2)+((y2-y1)**2)+((z2-z1)**2)) ** (0.5)
+
+def distance_2D(x1,x2,y1,y2): 
+    return (((x2-x1)**2)+((y2-y1)**2))) ** (0.5)
+
 
 read = open('in.txt', 'r')
 write = open('out.txt', 'w')
