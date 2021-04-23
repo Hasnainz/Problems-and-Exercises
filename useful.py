@@ -76,3 +76,8 @@ for i,v in enumerate(l1):
 
 f1.close()                                       
 f2.close()                                      
+
+#Fastest way to remove duplicates
+list(dict.fromkeys(items))
+
+#
