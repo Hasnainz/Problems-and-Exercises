@@ -62,3 +62,17 @@ for i in range(0, count):
 
 read.close()
 write.close()
+
+#Comparing 2 files line by line
+f1 = open('my_out.txt', 'r')
+f2 = open('out.txt', 'r')
+
+l1 = f1.readlines()
+l2 = f2.readlines()
+
+for i,v in enumerate(l1):
+    if v != l2[i]:
+        print(f'line number: {i+1}, {v.strip()} {l2[i].strip()}')
+
+f1.close()                                       
+f2.close()                                      
