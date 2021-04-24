@@ -13,7 +13,7 @@ def distance_3D(x1,x2,y1,y2,z1,z2):
 
 #Calculates the distance between 2 points in 2d space
 def distance_2D(x1,x2,y1,y2): 
-    return (((x2-x1)**2)+((y2-y1)**2))) ** (0.5)
+    return (((x2-x1)**2)+((y2-y1)**2)) ** (0.5)
 
 #Using a dictionary for faster lookup times
 
