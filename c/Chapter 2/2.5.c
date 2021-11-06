@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int any(s1[], s2[]);
+int any(char s1[], char s2[]);
 int in(char c, char b[]);
 
 int main(){
-
+    printf("%d\n", any("The cat goes meow", "m"));
 }
 
 int in(char c, char b[]){
@@ -17,7 +17,11 @@ int in(char c, char b[]){
     return 0;
 }
 
-void any(char a[], char b[]){
-
+int any(char a[], char b[]){
+    int i = 0;
+    while(a[i] != '\0')
+        if(in(a[i++], b))
+            return i-1;
+    return -1;
 }
 
