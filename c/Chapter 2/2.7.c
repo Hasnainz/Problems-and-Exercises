@@ -12,11 +12,11 @@ void showbits(unsigned int x){
 }
 
 int main(){
-  unsigned int a = setbits(0b10110101, 6, 4, 0b1010);
+  unsigned int a = invert(0b10110101, 4, 3);
   showbits(a);
   return 0;
 }
 
 unsigned int invert(unsigned int x, int p, int n){
-  return 0;
+  return x ^ ~(~(0 << 1)<<n)<<p-n+1;  
 }
